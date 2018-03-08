@@ -1,0 +1,315 @@
+// color varibles start
+$font-stack:'Roboto',
+sans-serif;
+$primary-color: #333;
+$gry: #dfdfdf;
+$orange: #f38030;
+$notblack:#363c58;
+$LightGreen:#2a9f90;
+$white:#fff;
+$lightGray:#eeeeee;
+// color varibles end
+
+
+%btnStyle {
+    border-radius: 0px;
+    font-size: 14px;
+    border: 1px solid !important;
+    width: 100%;
+    margin: 0 auto;
+    &:nth-child(1) {
+      margin-bottom: 10px;
+    }
+}
+
+html,
+body {
+  font-family: $font-stack;
+  margin: 0px;
+}
+
+.right {
+  float: right;
+}
+
+.closeIcon {
+  width: 30px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.copnyName {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.recruitmentMain {
+  margin: 0 0 0 0;
+}
+
+.prograBar h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.aptitude {
+  border: 1px solid $gry;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  .aptitudeTitle {
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    background-color: $gry;
+    padding: 15px 70px;
+    h2 img {
+      width: 35px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.ui-progressbar.ui-progressbar-determinate .ui-progressbar-value {
+  background: $orange;
+  border-radius: 0px;
+}
+
+.ui-widget-content {
+  height: 1.5em;
+  border: 1px solid $gry;
+  background: $white;
+  color: $notblack;
+  border-radius: 0px !important;
+}
+
+.no-marging {
+  margin: 0px;
+}
+
+.fbold {
+  font-weight: bold;
+}
+
+.fs1rem {
+  font-size: 1rem;
+}
+
+.moduleLearning {
+  padding: 20px 70px;
+}
+
+.groupBox {
+  border: 1px solid $gry;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px 10px;
+  &:hover {
+    box-shadow: 1px 1px 1px 1px #00000014;
+  }
+}
+
+.nameofcompny {
+  margin-top: 20px;
+}
+
+.nameofcompny span {
+  margin-right: 20px;
+}
+
+
+.orangeBtn {
+  @extend %btnStyle;
+  background-color: $orange !important;
+  border-color: $orange !important;
+  display: block;
+  &:hover {
+    background-color: darken($orange, 10%) !important;
+  }
+}
+
+.blackBtn {
+  @extend %btnStyle;
+  background-color: $notblack !important;
+  border-color: $notblack !important;
+  display: block;
+  &:hover {
+    background-color: darken($notblack, 10%) !important;
+  }
+}
+
+.btnmuted {
+  @extend %btnStyle;
+  background-color: $gry !important;
+  border-color: $gry !important;
+  display: block;
+  &:hover {
+    background-color: darken($gry, 10%) !important;
+  }
+}
+
+.btnGreen {
+  @extend %btnStyle;
+  background-color: $LightGreen !important;
+  border-color: $LightGreen !important;
+  display: block;
+  &:hover {
+    background-color: darken($LightGreen, 10%) !important;
+  }
+}
+
+.btnPaused {
+  @extend %btnStyle;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  display: block;
+  color: $notblack !important;
+  text-decoration: underline !important;
+  &:hover {
+    background-color: darken($gry, 10%) !important;
+  }
+}
+
+.LeaderBoard img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.LeaderBoard p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.grybg {
+  background-color: $lightGray;
+}
+
+.sectionTitle {
+  margin: 0px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.noindicate {
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+}
+
+.LeaderBoard22 {
+  text-align: center;
+}
+
+.testLock img {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+}
+
+.quants {
+  background-color: $lightGray;
+  padding: 15px 20px;
+  margin: 40px 0 15px 0;
+  img {
+    width: 35px;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+/* MEDIA QUERIES FOR CORE LAYOUT **************************************************************************************************************** */
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 641px) {
+    .copnyName {
+        font-size: 1rem;
+      }
+      .closeIcon {
+        width: 20px;
+      }
+      .prograBar h3 {
+        font-size: 0.9rem;
+      }
+      .aptitude .aptitudeTitle h2 {
+        font-size: 1rem;
+      }
+      .nameofcompny {
+        margin-top: 0px;
+        font-size: 0.9rem;
+      }
+      .LeaderBoard {
+        min-height: 90px;
+      }
+      .moduleLearning {
+        padding: 10px;
+      }
+      .orangeBtn,
+      .blackBtn,
+      .btnmuted,
+      .btnGreen,
+      .btnPaused {
+        font-size: 12px;
+      }
+      .nameofcompny span {
+        margin-right: 5px;
+      }
+      .noindicate {
+        font-size: 16px;
+      }
+      .aptitude .aptitudeTitle {
+        padding: 15px;
+      }
+}
+
+@media screen and (max-width: 640px) {
+  .copnyName {
+    font-size: 1rem;
+  }
+  .closeIcon {
+    width: 20px;
+  }
+  .prograBar h3 {
+    font-size: 0.9rem;
+  }
+  .aptitude .aptitudeTitle h2 {
+    font-size: 1rem;
+  }
+  .nameofcompny {
+    margin-top: 0px;
+    font-size: 0.9rem;
+  }
+  .LeaderBoard {
+    min-height: 90px;
+  }
+  .moduleLearning {
+    padding: 10px;
+  }
+  .orangeBtn,
+  .blackBtn,
+  .btnmuted,
+  .btnGreen,
+  .btnPaused {
+    font-size: 12px;
+  }
+  .nameofcompny span {
+    margin-right: 5px;
+  }
+  .noindicate {
+    font-size: 16px;
+  }
+  .aptitude .aptitudeTitle {
+    padding: 15px;
+  }
+}
